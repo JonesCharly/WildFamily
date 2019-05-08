@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Vibur');
 
+@mixin hr {
+    border: 2px solid;
+    border-color: rgb(240, 167, 57);
+    width: 15%;
+    margin-bottom: 4%;
+}
+
+@mixin h3 {
+    margin: 20px;
+    font-family: 'Vibur', cursive;
+    font-size: 62px;
+    text-align: center;
+    color: rgb(240, 167, 57);
+}

@@ -1,11 +1,9 @@
+@import '../../../styles.scss';
+
 /* TITLE */ 
 
 h3{
-    margin: 20px;
-    font-family: 'Vibur', cursive;
-    font-size: 62px;
-    text-align: center;
-    color: rgb(240, 167, 57);
+    @include h3;
 }
 
 hr {
