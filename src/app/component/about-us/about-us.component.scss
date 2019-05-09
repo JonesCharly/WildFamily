@@ -1,0 +1,215 @@
+@import '../../../styles.scss';
+
+
+h3{
+    margin: 20px;
+    font-family: 'Vibur', cursive;
+    font-size: 62px;
+    text-align: center;
+    color: rgb(240, 167, 57);
+}
+
+hr {
+    border: 2px solid;
+    border-color: rgb(240, 167, 57);
+    width: 15%;
+    margin-bottom: 4%;
+}
+
+.storyBlk{
+    width: 50%;
+    padding: 2%;
+    background-color: #a2d0cb;
+    overflow: scroll;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.storyBlk p {
+    @include textBloc;
+}
+
+.storyBlk h4 {
+    @include textTitle;
+    margin-bottom: 4%;
+}
+
+.storyBlk hr {
+    @include textHr;
+    margin-bottom: 4%;
+}
+
+.familyBlk img {
+    width: 280px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-bottom: -3%;
+}
+
+.familyBlk {
+    height: 1400px;
+}
+
+
+.textCard {
+    
+}
+
+.card-a {
+    width: 18%;
+    background: white;
+    padding: 2%;
+    border: 3px solid #a2d0cb;
+    border-radius: 20px;
+    position: relative;
+    left: 64%;
+}
+
+.arrOne {
+    height: 0px;
+}
+
+.arrOne .i-e {
+    width: 160px;
+    position: relative;
+    left: -8%;
+    top: -650px;
+    transform: rotate(-30deg)
+}
+
+.arrOne .i-a{
+    width: 610px;
+    position: relative;
+    left: 38%;
+    top: 200px;
+}
+
+.arrOne .i-b{
+    width: 500px;
+    position: relative;
+    left: -6%;
+    top: 800px;
+    transform: rotate(-24deg)
+}
+.arrOne .i-c{
+    width: 260px;
+    position: relative;
+    left: -15%;
+    top: 1200px;
+}
+
+.arrOne .i-d{
+    width: 580px;
+    position: relative;
+    left: 19%;
+    top: 1400px;
+}
+
+.arrOne .i-f {
+    width: 150px;
+    position: relative;
+    left: 35%;
+    top: 1100px;
+    transform: rotate(32deg)
+}
+
+.giphy-embed {
+    position: relative;
+    left: -5%;
+    top: -760px; 
+    transform: rotate(-20deg)
+}
+
+.giphy-embed2 {
+    position: relative;
+    left: 19%;
+    top: 1560px; 
+    transform: rotate(5deg)
+}
+
+.card-b {
+    width: 18%;
+    background: white;
+    padding: 2%;
+    border: 3px solid #a2d0cb;
+    border-radius: 20px;
+    position: relative;
+    left: 14%;
+    top: -574px;
+}
+
+.card-c {
+    width: 18%;
+    background: white;
+    padding: 2%;
+    border: 3px solid #a2d0cb;
+    border-radius: 20px;
+    position: relative;
+    left: 56%;
+    top: -604px;
+}
+
+.card-d {
+    width: 18%;
+    background: white;
+    padding: 2%;
+    border: 3px solid #a2d0cb;
+    border-radius: 20px;
+    position: relative;
+    left: 21%;
+    top: -974px;
+}
+
+.card-e {
+    width: 18%;
+    background: white;
+    padding: 2%;
+    border: 3px solid #a2d0cb;
+    border-radius: 20px;
+    position: relative;
+    left: 52%;
+    top: -1174px;
+    margin-bottom: 100px;
+}
+
+
+
+.textCard h5 {
+    font-family: 'Rubik';
+    font-size: 32px;
+    margin-bottom: -15%;
+    text-align: center;
+}
+
+.textCard h6 {
+    font-family: 'Rubik';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #a2d0cb;
+}
+
+.textCard p {
+    font-family: 'Rubik';
+    font-size: 17px;
+    text-align: justify;
+}
+
+.textCard hr {
+    margin: auto;
+    margin-top: -2%;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.btnWay {
+    border: 3px solid #a2d0cb;
+    border-radius: 7px;
+    width: 40%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #a2d0cb;
+    font-weight: bold;
+    margin: auto;
+}
