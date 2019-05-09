@@ -2,3 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Vibur');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
 
+@mixin textBloc {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+@mixin textTitle {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 47px;
+    margin-top: 2%;
+    margin-bottom: 9%;
+}
+
+@mixin textHr {
+    margin: 0%;
+    width: 100px;
+    border: 3px solid white;
+    margin-bottom: 15%;
+}
+
+@mixin btnWay {
+    border: 3px solid white;
+    border-radius: 7px;
+    width: 40%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 8%;
+}
