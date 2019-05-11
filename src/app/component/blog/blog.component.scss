@@ -1,3 +1,9 @@
+@import '../../../styles.scss';
+
+
+.blogCtn{
+    margin-top: 3%;
+}
 
 .blogGrid {
     display: grid;
@@ -80,9 +86,7 @@ h5 {
 }
 
 p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 17px;
-    color: white;
+    @include textBloc;
     /* color: rgb(29, 77, 76);*/
 }
 
