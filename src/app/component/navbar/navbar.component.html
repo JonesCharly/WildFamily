@@ -1,16 +1,19 @@
 <div class="navbarCtn">
 
-  <div class="navBlc">
+  <div class="navBlc" [@openClose]="isOpen ? 'open' : 'close'">
+
+    <button type="button" (click)="toggle()" [@rotateBtn]="isOpen ? 'right' : 'left'"><i class="fas fa-angle-double-right"></i></button>   
+
+    <div class="linkblc" [@rotateText]="isOpen ? 'verti' : 'hori'" >
 
         
-
-    <div class="linkblc">
-
-        <button type="button"><i class="fas fa-angle-double-right"></i></button>
         <a [routerLink]="['/gallery']">Gallery</a>
         <a>Map</a>
         <a [routerLink]="['/blog']">Blog</a>
+        <br>
         <a [routerLink]="['/about']">About</a>
+        <br>
+        <br>
         <a [routerLink]="['/contact']">Contact</a>
 
     </div>

@@ -1,6 +1,5 @@
-.navBlc {
+ .navBlc {
     background-color: rgb(240, 167, 57);
-    width: 6%;
     height: 100vh;
     margin-left: -1%;
     margin-top: -2%;
@@ -11,38 +10,51 @@
 }
 
 .linkblc {
+    display: flex;
+   /* transform: rotate( -90deg );*/
+    font-family: 'Rubik';
+    position: relative;
+    top: 50%;
+    text-align: center;
 }
 
-.linkblc a{
+.linkblc a {
+    margin: 15%;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/* .linkblc a{
     position: relative;
     top: 100px;
     text-decoration: none;
     color: azure;
     font-family: 'Rubik';
-    font-weight: bold;
-    font-size: 22px;
+    
+    
     padding: 40%;
     text-align: center;
     display: block;
-    transform: rotate( -90deg );
-    -ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
-}
+    
+   /* -ms-transform: rotate(-90deg);  IE 9 
+    -webkit-transform: rotate(-90deg);  Chrome, Safari, Opera 
+} */
 
 .navBlc i{
-    position: relative;
-    top: 50px;
-    left: 30%;
-    font-size: 60px;
-    color: azure;
+
+    font-size: 500%;
+    color: white;
 }
 
 button {
+   margin-top: 50%;
+    margin-left: 28%;
     color: inherit;
     background: transparent;
     border: none;
 }
 /* Focus event */
-
-
+a:focus,button:focus {
+    outline: none;}
