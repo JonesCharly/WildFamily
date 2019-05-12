@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./in-progress.component.scss']
 })
 export class InProgressComponent implements OnInit {
+  modalBox= true;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  showModal(){
+    this.modalBox = !this.modalBox;
+  }
 }

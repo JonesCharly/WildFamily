@@ -1,3 +1,5 @@
+<app-in-progress *ngIf="modalBox"></app-in-progress>
+
 <div class="aboutCtn">
 
     <div class="headCtn">
@@ -57,7 +59,7 @@
                 <p>I work with my Google Pixel Phone & the Canon EOS 4000D</p> 
             </div>
             <div class="btnWay">
-                <a>Discover more</a>
+                <button (clik)="showModal()">Discover more</button>
             </div>
         </div>
 
