@@ -11,10 +11,11 @@
 
 .linkblc {
     display: flex;
+    flex-direction: row-reverse;
    /* transform: rotate( -90deg );*/
     font-family: 'Rubik';
     position: relative;
-    top: 50%;
+    top: 5%;
     text-align: center;
 }
 
@@ -58,3 +59,23 @@ button {
 /* Focus event */
 a:focus,button:focus {
     outline: none;}
+
+
+/* Footer */
+.footerblc i{
+    font-size:365%;
+    margin-top: 20%;
+    margin-right: 6%;
+}
+
+.footerblc {
+    margin-left: 18%;
+    margin-top: 25%;
+}
+
+hr {
+    margin: 20%;
+    width: 90px;
+    border: 4px solid white;
+    margin-bottom: 5%;
+}

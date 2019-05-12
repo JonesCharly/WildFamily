@@ -10,17 +10,16 @@
         <a [routerLink]="['/gallery']">Gallery</a>
         <a>Map</a>
         <a [routerLink]="['/blog']">Blog</a>
-        <br>
         <a [routerLink]="['/about']">About</a>
-        <br>
-        <br>
         <a [routerLink]="['/contact']">Contact</a>
 
     </div>
 
-    <div class="footerblc">
-
-
+    <div class="footerblc" *ngIf="footer">
+      <hr>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
     </div>
     
   </div>

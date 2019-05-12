@@ -16,7 +16,7 @@ import { RouterState } from '@angular/router';
     trigger ('openClose', [
 
       state('close', style({
-        width: '16%',
+        width: '14%',
       })),
       state('open', style({
         width: '7%',
@@ -70,9 +70,11 @@ import { RouterState } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   isOpen= true;
+  footer= false;
 
   toggle() {
-    this.isOpen =!this.isOpen;  }
+    this.isOpen =!this.isOpen; 
+    this.footer =!this.footer }
 
   constructor() { }
 
