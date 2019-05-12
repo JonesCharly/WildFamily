@@ -1,6 +1,17 @@
 @import '../../../styles.scss';
 
 
+.headCtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.headCtn img {
+    width: 27%;
+    height: 27%;
+}
+
 h3{
     margin: 20px;
     font-family: 'Vibur', cursive;

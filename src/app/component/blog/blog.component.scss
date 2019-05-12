@@ -2,7 +2,7 @@
 
 
 .blogCtn{
-    margin-top: 3%;
+    
 }
 
 .blogGrid {
@@ -14,6 +14,7 @@
     grid-template-rows: 18% 35% 30%; 
     grid-gap: 25px;
     justify-content: center;
+    padding-top: 2%;
 }
 
 img {
