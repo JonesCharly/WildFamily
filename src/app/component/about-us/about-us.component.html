@@ -1,3 +1,12 @@
+<ngx-smart-modal #myModal identifier="myModal" customClass="progressBox" class="progressBox">
+    <h3>Work in Progress...</h3>
+    <hr>
+    <p>Sorry This page isn't Available yet !!!</p>
+    <iframe src="https://giphy.com/embed/3owyp2SViuDIGh8YoM" width="380" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <hr>
+    <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>
+
 <div class="aboutCtn">
 
     <div class="headCtn">
@@ -56,7 +65,7 @@
                        </p>
                 <p>I work with my Google Pixel Phone & the Canon EOS 4000D</p> 
             </div>
-            <div class="btnWay">
+            <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
                 <a>Discover more</a>
             </div>
         </div>
@@ -72,7 +81,7 @@
                 <p>Little princess of my dad, i love to practice sports, surf & running. I love too to paint landscape during the Roadtrip.</p>
                 <p>I Work with unipen & Fabercastel materials</p>
             </div> 
-            <div class="btnWay">
+            <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
                 <a>Discover more</a>
             </div>
         </div>
@@ -87,7 +96,7 @@
                 <p>I'm the younger of the family, i'm already a star cause i love sing & imagine poems inspired by travel and people i met during travel.</p>
                 <p>I work with a old Apple Ipod</p>
             </div>
-            <div class="btnWay">
+            <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
                 <a>Discover more</a>
             </div>
         </div>
@@ -102,7 +111,7 @@
                 <p>The old brother, like my parents i love to take photographies of nature around me specially animals & insects. I would like to expose my work around the world !</p>
                 <p>I work with Polaroid instax 90</p>
             </div>
-            <div class="btnWay">
+            <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
                 <a>Discover more</a>
             </div>
 
@@ -119,7 +128,7 @@
                 <p>I used to be a pro surfer and i decided to continue to travel to live my second passion photography. I expose most of my work in USA and Europe.</p>
                 <p>I work with Go Pro & Reflex Nikon D3100</p>
             </div>
-            <div class="btnWay">
+            <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
                 <a>Discover more</a>
             </div>
         </div>

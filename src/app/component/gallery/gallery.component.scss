@@ -1,7 +1,11 @@
+
+/* HEADER */
+
 .headCtn {
     display: flex;
     justify-content: center;
     padding-top: 2%;
+    animation: bounceInDown 3s;
 }
 
 .headCtn img {
@@ -9,9 +13,24 @@
     height: 27%;
 }
 
-@-webkit-keyframes moving {
-    
-}
+@-webkit-keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -700px, 0);}
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);}
+  
+    75% {
+      transform: translate3d(0, -10px, 0);}
+  
+    90% {
+      transform: translate3d(0, 5px, 0);}
+  
+    to {
+      transform: translate3d(0, 0, 0);}
+  }
 
 /* TITLE */ 
 

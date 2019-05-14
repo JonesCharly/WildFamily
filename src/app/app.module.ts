@@ -8,7 +8,10 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { InProgressComponent } from './component/in-progress/in-progress.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 
 @NgModule({
@@ -18,12 +21,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     NavbarComponent,
     BlogComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    InProgressComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxSmartModalModule.forRoot(),
+    NgxSmartModalModule.forChild()
 
   ],
   providers: [],
