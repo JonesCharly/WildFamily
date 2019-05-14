@@ -1,4 +1,4 @@
-  <div class="progressBox">
+  <!--<div class="progressBox">
     <h3>Work in Progress...</h3>
     <hr>
     <p>Sorry This page isn't Available yet !!!</p>
@@ -7,4 +7,14 @@
     <button>Close</button>
   </div>>
 
-  <div class="progressCtn"></div>
+  <div class="progressCtn"></div> -->
+
+
+  <ngx-smart-modal #myModal identifier="myModal" class="progressBox">
+    <h3>Work in Progress...</h3>
+    <hr>
+    <p>Sorry This page isn't Available yet !!!</p>
+    <iframe src="https://giphy.com/embed/3owyp2SViuDIGh8YoM" width="380" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <hr>
+    <button (click)="myModal.close()">Close</button>
+  </ngx-smart-modal>

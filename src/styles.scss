@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Vibur');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
+$dialog-position-top: 8%;
+@import "~ngx-smart-modal/ngx-smart-modal";
+@import "app/app.component";
 
 @mixin textBloc {
     font-family: 'Rubik', sans-serif;
@@ -33,4 +36,9 @@
     color: white;
     font-weight: bold;
     margin-top: 8%;
+}
+
+.progressBox {
+    width: 3000px;
+    max-width: 1000px !important;
 }

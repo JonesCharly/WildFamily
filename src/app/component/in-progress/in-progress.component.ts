@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-in-progress',
@@ -6,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./in-progress.component.scss']
 })
 export class InProgressComponent implements OnInit {
-  modalBox= true;
+  /*modalBox= true;*/
 
-  constructor() { }
+  constructor(public ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
   }
 
-  showModal(){
+ /* showModal(){
     this.modalBox = !this.modalBox;
-  }
+  }*/
 }
