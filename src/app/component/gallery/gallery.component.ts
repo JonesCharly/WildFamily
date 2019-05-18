@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryData } from '../../data'
-import { MatDialog } from '@angular/material';
+/*import { MatDialog, MatDialogRef } from '@angular/material'; */
 
 @Component({
   selector: 'app-gallery',
@@ -9,17 +9,16 @@ import { MatDialog } from '@angular/material';
 })
 export class GalleryComponent implements OnInit {
 
+  DialogModal
 
-  constructor(/*public dialog: MatDialog*/) { }
+  constructor(/*private dialog: MatDialog*/) { }
 
   ngOnInit() {
   }
 
- /* openDialog(): void {
-    const dialogRef = this.dialog.open(/*DialogOverviewExampleDialog , {
-      width: '250px',
-      data: {}
-    }); 
+  /*openDialog() {
+    this.DialogModal = this.dialog.open(this.DialogModal); 
   }*/
 
 }
+

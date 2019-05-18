@@ -21,9 +21,13 @@
         
         <div class="gridBlc">
 
-            <div id="item-a" class="box">
+            <div id="item-a" class="box" (click)="openDialog()">
                 <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg" alt="voyage">
             </div>
+
+           <!-- <div mat-dialog-content *ngIf="DialogModal">
+                <h3>Hello World</h3>
+            </div> -->
 
             <div id="item-b" class="box">
                 <img class= "modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V4 / October 2018" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg" alt="voyage2">

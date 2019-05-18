@@ -12,7 +12,8 @@ import { InProgressComponent } from './component/in-progress/in-progress.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxSmartModalModule } from 'ngx-smart-modal';
-/*import { MatDialog } from '@angular/material'; */
+import { MatDialog } from '@angular/material'; 
+import { MatDialogModule } from '@angular/material';
 
 
 @NgModule({
@@ -23,8 +24,7 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
     BlogComponent,
     AboutUsComponent,
     ContactUsComponent,
-    InProgressComponent,
-    
+    InProgressComponent, 
   ],
   imports: [
     BrowserModule,
@@ -32,9 +32,10 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
     BrowserAnimationsModule,
     NgxSmartModalModule.forRoot(),
     NgxSmartModalModule.forChild(),
-    
+  
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
