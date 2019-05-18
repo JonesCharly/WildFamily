@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-/*import { MatDialog } from '@angular/material';*/
+import { galleryData } from '../../data'
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-gallery',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+
 
   constructor(/*public dialog: MatDialog*/) { }
 
