@@ -5,6 +5,8 @@ $dialog-position-top: 8%;
 @import "~ngx-smart-modal/ngx-smart-modal";
 @import "app/app.component";
 
+/* TEXTS */
+
 @mixin textBloc {
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
@@ -26,6 +28,8 @@ $dialog-position-top: 8%;
     margin-bottom: 15%;
 }
 
+/* BUTTONS */
+
 @mixin btnWay {
     border: 3px solid white;
     border-radius: 7px;
@@ -37,6 +41,41 @@ $dialog-position-top: 8%;
     font-weight: bold;
     margin-top: 8%;
 }
+
+/* TITLES */
+
+@mixin Titre_h3 {
+    margin: 20px;
+    font-family: 'Vibur', cursive;
+    font-size: 62px;
+    text-align: center;
+    color: rgb(240, 167, 57);
+        @media (max-width: 820px) {
+             font-size: 50px; 
+             margin-bottom: -4%;
+        }
+}
+
+@mixin Titre_hr {
+    border: 2px solid;
+    border-color: rgb(240, 167, 57);
+    width: 15%;
+    margin-bottom: 4%;
+
+}
+
+@mixin Titre_Blue {
+    margin: -20px;
+    font-family: 'Vibur', cursive;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(35, 62, 79);
+        @media (max-width: 820px) {
+            font-size: 30px; 
+        }
+}
+
+/* MODAL BOX */
 
 .progressBox {
     width: 3000px;

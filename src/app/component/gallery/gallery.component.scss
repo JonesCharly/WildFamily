@@ -1,5 +1,6 @@
+@import '../../../styles.scss';
 
-/* HEADER */
+/* HEADER & ANIMATION */
 
 .headCtn {
     display: flex;
@@ -35,28 +36,15 @@
 /* TITLE */ 
 
 h3{
-    margin: 20px;
-    font-family: 'Vibur', cursive;
-    font-size: 62px;
-    text-align: center;
-    color: rgb(240, 167, 57);
-}
+    @include Titre_h3; }
 
 hr {
-    border: 2px solid;
-    border-color: rgb(240, 167, 57);
-    width: 15%;
-    margin-bottom: 4%;
-}
+    @include Titre_hr; }
 
 /* HEAD GALLERY */ 
 
 h4, h5 {
-    margin: -20px;
-    font-family: 'Vibur', cursive;
-    font-size: 45px;
-    text-align: center;
-    color: rgb(35, 62, 79);
+    @include Titre_Blue;
 }
 
 .textBlc {
@@ -130,10 +118,6 @@ h4, h5 {
 
 /* HOVER EFFECT */
 
-.box {
-
-}
-
 .gridBlc:hover .box{
     filter:blur(1px);
     opacity:.8;
@@ -146,4 +130,29 @@ h4, h5 {
     filter:blur(0px);
     opacity:1;
     box-shadow:0 8px 20px 0px rgba(0,0,0,0.3);
+}
+
+/* MOBILE STYLE */
+
+@media (max-width: 820px) {
+    .gridBlc {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+
+    .gridBlc img {
+        margin-bottom: 4%; }
+
+    /* HEADER */
+
+    .headCtn img {
+        width: 80%;
+        height: 80%;
+        padding-top: 5%;
+        margin-bottom: 5%;
+    }
 }

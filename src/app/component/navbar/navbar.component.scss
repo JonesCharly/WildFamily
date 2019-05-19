@@ -79,3 +79,11 @@ hr {
     border: 4px solid white;
     margin-bottom: 5%;
 }
+
+/* MOBILE STYLE */
+
+@media (max-width: 820px) {
+    .navbarCtn {
+        display: none;
+    }
+}

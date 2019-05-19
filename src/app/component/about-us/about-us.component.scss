@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-/* HEADER */
+/* HEADER & ANIMATION */
 
 .headCtn {
     display: flex;
@@ -33,22 +33,15 @@
     transform: translate3d(0, 0, 0);}
 }
 
-/* CONTENT */
+/* TITLE */ 
 
 h3{
-    margin: 20px;
-    font-family: 'Vibur', cursive;
-    font-size: 62px;
-    text-align: center;
-    color: rgb(240, 167, 57);
-}
+    @include Titre_h3; }
 
 hr {
-    border: 2px solid;
-    border-color: rgb(240, 167, 57);
-    width: 15%;
-    margin-bottom: 4%;
-}
+    @include Titre_hr; }
+
+/* STORY BLOC */ 
 
 .storyBlk{
     width: 50%;
@@ -97,6 +90,8 @@ hr {
     position: relative;
     left: 64%;
 }
+
+/* ARROWS */
 
 .arrOne {
     height: 0px;
@@ -159,6 +154,8 @@ hr {
     top: 1560px; 
     transform: rotate(5deg)
 }
+
+/* CARDS */
 
 .card-b {
     width: 18%;
@@ -294,4 +291,57 @@ hr {
 
 .progressBox iframe {
    margin-left: 26%;
+}
+
+@media (max-width: 820px) {
+    /* HEADER */
+
+    .headCtn img {
+        width: 80%;
+        height: 80%;
+        padding-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* STORY BLOC */
+
+    .storyBlk{
+        width: 80%;
+        padding: 6%;
+        margin-bottom: 10%;
+        text-align: justify;
+    }
+
+    /* DECORATIONS */
+
+    .arrOne {
+        display: none;
+    }
+
+    /* CARDS */
+
+    .familyBlk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        position: static;
+        height: auto;
+    }
+
+    .familyBlk img {
+        width: 200px;
+        margin-left: 20%;
+        margin-bottom: -2%;
+        
+    }
+
+    .card-a, .card-b, .card-c, .card-d, .card-e {
+        width: 80%;
+        position: static;
+        margin: auto;
+        margin-bottom: 4%;
+
+    }
+
 }

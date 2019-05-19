@@ -1,0 +1,19 @@
+<div class="menuCtn">
+
+  <div class="menuBlc" *ngIf="showMenuPage">
+      <h4>Menu</h4>
+      <hr>
+      <a [routerLink]="['/gallery']" (click)="closeMenu()">Gallery</a>
+      <a (click)="closeMenu()">Map</a>
+      <a [routerLink]="['/blog']" (click)="closeMenu()">Blog</a>
+      <a [routerLink]="['/about']" (click)="closeMenu()">About</a>
+      <a [routerLink]="['/contact']" (click)="closeMenu()">Contact</a>
+      <hr>
+    </div>
+
+  <div class="menuBtn" (click)="openMenu()">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <i class="fas fa-bars"></i>
+  </div>
+
+</div>

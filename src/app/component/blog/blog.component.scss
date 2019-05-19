@@ -1,9 +1,6 @@
 @import '../../../styles.scss';
 
-
-.blogCtn{
-    
-}
+/* GRID */
 
 .blogGrid {
     display: grid;
@@ -67,6 +64,7 @@ img {
     grid-column: 3 / 4;
     grid-row: 3 / 4 }
     
+/* TEXTS & TITLES */
 
 h4{
     font-family: 'Vibur', cursive;
@@ -87,36 +85,44 @@ h5 {
 
 p {
     @include textBloc;
-    /* color: rgb(29, 77, 76);*/
-}
+    /* color: rgb(29, 77, 76);*/ }
 
 .txtGras{
     font-weight: bold;
-    font-size: 20px;
-}
+    font-size: 20px; }
 
 i {
     font-size: 45px;
-    color: white;
-}
+    color: white; }
 
 hr {
-    margin: 0%;
-    width: 100px;
-    border: 3px solid white;
-    margin-bottom: 15%;
-}
+    @include textHr ; }
+
+/* BUTTONS */
 
 .btnWay {
-    border: 3px solid white;
-    border-radius: 7px;
-    width: 40%;
-    padding: 2%;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    font-weight: bold;
-    margin-top: 8%;
-    
-}
+    @include btnWay ; }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 820px ) {
+    .blogGrid {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        margin-top: 3%;
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-5, .item-6, .item-7{
+        margin-bottom: 3%;
+    }
+
+    h4{
+        font-family: 'Vibur', cursive;
+        font-size: 98px;
+        color: white;
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
