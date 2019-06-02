@@ -1,14 +1,31 @@
 <div class="menuCtn">
 
   <div class="menuBlc" *ngIf="showMenuPage">
-      <h4>Menu</h4>
-      <hr>
-      <a [routerLink]="['/gallery']" (click)="closeMenu()">Gallery</a>
-      <a (click)="closeMenu()">Map</a>
-      <a [routerLink]="['/blog']" (click)="closeMenu()">Blog</a>
-      <a [routerLink]="['/about']" (click)="closeMenu()">About</a>
-      <a [routerLink]="['/contact']" (click)="closeMenu()">Contact</a>
-      <hr>
+      <!-- <div class="blcOne">
+        <h4>Menu</h4>
+      </div> -->
+      
+      <div class="blcTwo">
+        <i class="fas fa-camera-retro"></i>
+        <a [routerLink]="['/gallery']" (click)="closeMenu()">Gallery</a>
+      </div>
+      <div class="blcThree">
+        <i class="fas fa-map-marked-alt"></i>
+        <a (click)="closeMenu()">Map</a>
+      </div>
+      <div class="blcFour">
+        <i class="fas fa-pencil-alt"></i>
+       <a [routerLink]="['/blog']" (click)="closeMenu()">Blog</a>
+      </div>
+      <div class="blcFive">
+          <i class="fas fa-book"></i>
+       <a [routerLink]="['/about']" (click)="closeMenu()">About</a>
+      </div>
+      <div class="blcSix">
+          <i class="far fa-paper-plane"></i>
+        <a [routerLink]="['/contact']" (click)="closeMenu()">Contact</a>
+      </div>
+      
     </div>
 
   <div class="menuBtn" (click)="openMenu()">

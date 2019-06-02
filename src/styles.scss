@@ -81,3 +81,10 @@ $dialog-position-top: 8%;
     width: 3000px;
     max-width: 1000px !important;
 }
+
+@media (max-width: 820px) {
+    .progressBox {
+        width: 400px;
+        max-width: 600px !important;
+    }
+}
