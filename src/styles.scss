@@ -9,7 +9,7 @@ $dialog-position-top: 8%;
 
 @mixin textBloc {
     font-family: 'Rubik', sans-serif;
-    font-size: 17px;
+    font-size: 13px;
     color: white;
 }
 
@@ -47,7 +47,7 @@ $dialog-position-top: 8%;
 @mixin Titre_h3 {
     margin: 20px;
     font-family: 'Vibur', cursive;
-    font-size: 62px;
+    font-size: 58px;
     text-align: center;
     color: rgb(240, 167, 57);
         @media (max-width: 820px) {
@@ -61,13 +61,14 @@ $dialog-position-top: 8%;
     border-color: rgb(240, 167, 57);
     width: 15%;
     margin-bottom: 4%;
+    margin-top: -2%;
 
 }
 
 @mixin Titre_Blue {
     margin: -20px;
     font-family: 'Vibur', cursive;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     color: rgb(35, 62, 79);
         @media (max-width: 820px) {
