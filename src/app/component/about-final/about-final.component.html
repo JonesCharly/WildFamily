@@ -1,0 +1,130 @@
+<ngx-smart-modal #myModal identifier="myModal" customClass="progressBox" class="progressBox">
+    <h3>Work in Progress...</h3>
+    <hr>
+    <p>Sorry This page isn't Available yet !!!</p>
+    <iframe src="https://giphy.com/embed/3owyp2SViuDIGh8YoM" width="380" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <hr>
+    <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>
+
+
+<div class="aboutCtn">
+
+  <div class="headCtn">
+      <img src="../../../assets/img/logo5.png">
+  </div>
+
+  <h3>About Us</h3>
+  <hr>
+
+
+  <div class="storyBlk">
+
+      <h4>Our Story</h4>
+      <hr>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci veritatis
+          quibusdam? Quo temporibus ullam repudiandae et voluptates, provident a ea aperiam beatae eos
+          excepturi totam, nesciunt laborum, ducimus incidunt. Quis ex repudiandae inventore ipsum
+          voluptas rerum tenetur ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+          est at corporis minus, optio temporibus debitis saepe laborlum, consequatur dolorum sint,
+          fugit impedit iusto similique placeat quas quo eveniet neque. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit.iusto similique placeat quas quo eveniet neque. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit.
+      </p>
+
+  </div>
+
+  <hr>
+
+  <div class="cardCtn" id="cardOne">
+    <div class="cardItem">
+
+      <h5>Nathalia</h5>
+      <h6>The Fabulous Mum</h6>
+      <hr>
+
+      <p>Huge Fan of Pizzas<br>
+      <br>Beauty and Lifestyle influencer, I work with a lot of brands to shot them products in beautifuls places. 
+         Est at corporis minus, optio temporibus debitis saepe laborlum, consequatur dolorum sint,<br>
+      <br>I work with my Google Pixel Phone & the Canon EOS 4000D</p> 
+
+      <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
+          <a>Discover more</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cardCtn" id="cardTwo">
+      <div class="cardItem">
+  
+        <h5>Cloe</h5>
+        <h6>The Big sister</h6>
+        <hr>
+  
+        <p>Love Runing & paint<br>
+        <br>Little princess of my dad, i love to practice sports, surf & running. I love too to paint landscape during the Roadtrip.
+           Est at corporis minus, optio temporibus debitis saepe laborlum, consequatur dolorum sint,<br>
+        <br>I Work with unipen & Fabercastel materials</p> 
+  
+        <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
+            <a>Discover more</a>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="cardCtn" id="cardThree">
+      <div class="cardItem">
+  
+        <h5>Archie</h5>
+        <h6>The last but not least</h6>
+        <hr>
+  
+        <p>Born to be a Star<br>
+        <br>I'm the younger of the family, i'm already a star cause i love sing & imagine poems inspired by travel and people i met during travel.<br>
+        <br>I work with a old Apple Ipod</p> 
+  
+        <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
+            <a>Discover more</a>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="cardCtn" id="cardFour">
+      <div class="cardItem">
+  
+        <h5>Nathan</h5>
+        <h6>The grand Brother</h6>
+        <hr>
+  
+        <p>Nature dreamer lover<br>
+        <br>The old brother, like my parents i love to take photographies of nature around me specially animals & insects. I would like to expose my work around the world !<br>
+        <br>I work with Polaroid instax 90</p> 
+  
+        <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
+            <a>Discover more</a>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="cardCtn" id="cardFive">
+      <div class="cardItem">
+  
+        <h5>Mike</h5>
+        <h6>The Amazing Dad</h6>
+        <hr>
+  
+        <p>Old school Driver & surfer<br>
+        <br>I used to be a pro surfer and i decided to continue to travel to live my second passion photography. I expose most of my work in USA and Europe.
+        <br>I work with Go Pro & Reflex Nikon D3100</p> 
+  
+        <div class="btnWay" (click)="ngxSmartModalService.getModal('myModal').open()">
+            <a>Discover more</a>
+        </div>
+  
+      </div>
+    </div>

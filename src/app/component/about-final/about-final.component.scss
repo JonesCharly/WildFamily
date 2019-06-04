@@ -1,0 +1,212 @@
+@import '../../../styles.scss';
+
+/* HEADER & ANIMATION */
+
+.headCtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    animation: bounceInDown 3s;
+}
+
+.headCtn img {
+    width: 27%;
+    height: 27%;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -600px, 0);}
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);}
+
+  75% {
+    transform: translate3d(0, -15px, 0);}
+
+  90% {
+    transform: translate3d(0, 5px, 0);}
+
+  to {
+    transform: translate3d(0, 0, 0);}
+}
+
+/* TITLE */ 
+
+h3{
+    @include Titre_h3; }
+
+hr {
+    @include Titre_hr; }
+
+/* STORY BLOC */ 
+
+.storyBlk{
+    width: 50%;
+    padding: 2%;
+    background-color: #a2d0cb;
+    overflow: scroll;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.storyBlk p {
+    @include textBloc;
+}
+
+.storyBlk h4 {
+    @include textTitle;
+    margin-bottom: 4%;
+}
+
+.storyBlk hr {
+    @include textHr;
+    margin-bottom: 4%;
+}
+
+/* CARD CTN */ 
+
+.cardCtn {
+    width: 280px;
+    height: 380px;
+   // position: absolute;
+  //  right: 0; left: 0; 
+    margin: auto;
+    box-shadow: 0 0 5px #a2d0cb;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cardCtn, #cardOne {
+    background: url("../../../assets/img/girl.jpg");
+}
+
+.cardCtn, #cardTwo {
+    background: url("../../../assets/img/childone.jpg");
+}
+
+.cardCtn, #cardThree {
+    background: url("../../../assets/img/childtwo.jpg");
+}
+
+.cardCtn, #cardFour {
+    background: url("../../../assets/img/childtroi.jpg");
+}
+
+.cardCtn, #cardFive {
+    background: url("../../../assets/img/dadone.jpg");
+}
+
+.cardItem {
+    position: absolute;
+   // right: 0; left: 0; 
+   width: 280px;
+   height: 380px;
+    margin: auto;
+   // width: 100%; height: 100%;
+    // background: rgba(221, 157, 19, 0.9);
+    background: rgba(107, 173, 166, 0.9);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(30px);
+    border-radius: 5px;
+}
+
+.cardItem:hover {
+    opacity: 0.9;
+    transform: translateY(0px);
+ & hr {
+    width: 20%;
+}
+}
+
+.cardItem h5 {
+    font-family: 'Rubik';
+    font-size: 30px;
+    margin: 20px;
+}
+
+.cardItem h6 {
+    font-family: 'Rubik';
+    font-size: 15px;
+    margin: -15px 0px 20px 21px;
+}
+
+.cardItem hr {
+    border: 2px solid white;
+    position: absolute;
+    left:20px;
+    width: 0%;
+    transition: all .9s;
+}
+
+.cardItem p {
+    @include textBloc;
+    margin: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardItem .btnWay {
+    border: 3px solid #ffffff;
+    border-radius: 7px;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 22px;
+}
+
+
+
+/* MODAL BOX */
+
+.progressBox {
+    width: 3000px;
+    max-width: 1000px !important;
+}
+
+
+.progressBox h3 {
+    margin: 20px;
+    font-family: 'Vibur', cursive;
+    font-size: 62px;
+    text-align: center;
+    color: rgb(240, 167, 57);
+}
+
+.progressBox p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(35, 62, 79);
+}
+
+.progressBox button {
+    background: none;
+    color: rgb(240, 167, 57);
+    border: 5px solid rgb(240, 167, 57);
+    font-size: 30px;
+    padding: 1% 5% 1% 5%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.progressBox hr {
+    width: 30%;
+    border: 4px solid rgb(35, 62, 79);
+    background-color: rgb(35, 62, 79);
+}
+
+.progressBox iframe {
+   margin-left: 26%;
+}

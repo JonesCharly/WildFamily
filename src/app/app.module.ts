@@ -15,6 +15,7 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
 import { MatDialog } from '@angular/material'; 
 import { MatDialogModule } from '@angular/material';
 import { MenuburgerComponent } from './component/menuburger/menuburger.component';
+import { AboutFinalComponent } from './component/about-final/about-final.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MenuburgerComponent } from './component/menuburger/menuburger.component
     AboutUsComponent,
     ContactUsComponent,
     InProgressComponent,
-    MenuburgerComponent, 
+    MenuburgerComponent,
+    AboutFinalComponent, 
   ],
   imports: [
     BrowserModule,
