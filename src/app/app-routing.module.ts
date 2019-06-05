@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { GalleryComponent } from './component/gallery/gallery.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
-import { AboutUsComponent } from './component/about-us/about-us.component';
 import { InProgressComponent } from './component/in-progress/in-progress.component';
 import { AboutFinalComponent } from './component/about-final/about-final.component'
 
