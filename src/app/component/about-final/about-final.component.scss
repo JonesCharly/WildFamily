@@ -1,0 +1,355 @@
+@import '../../../styles.scss';
+
+/* HEADER & ANIMATION */
+
+.headCtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    animation: bounceInDown 3s;
+}
+
+.headCtn img {
+    width: 27%;
+    height: 27%;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -600px, 0);}
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);}
+
+  75% {
+    transform: translate3d(0, -15px, 0);}
+
+  90% {
+    transform: translate3d(0, 5px, 0);}
+
+  to {
+    transform: translate3d(0, 0, 0);}
+}
+
+/* TITLE */ 
+
+h3{
+    @include Titre_h3; }
+
+hr {
+    @include Titre_hr; }
+
+/* STORY BLOC */ 
+
+.storyBlk{
+    width: 50%;
+    padding: 2%;
+    background-color: #a2d0cb;
+    overflow: scroll;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.storyBlk p {
+    @include textBloc;
+}
+
+.storyBlk h4 {
+    @include textTitle;
+    margin-bottom: 4%;
+}
+
+.storyBlk hr {
+    @include textHr;
+    margin-bottom: 4%;
+}
+
+/* CARD CTN */ 
+
+.cardCtn {
+    width: 280px;
+    height: 380px;
+    // margin: auto;
+    box-shadow: 0 0 5px #a2d0cb;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cardCtn, #cardOne {
+    background: url("../../../assets/img/girl.jpg");
+    background-size: 400px 380px;
+    position: relative;
+    right: -20%; 
+    margin-bottom: -10%;
+}
+
+.cardCtn, #cardTwo {
+    background: url("../../../assets/img/childone.jpg");
+    background-size: 400px 380px;
+    position: relative;
+    right: -60%; 
+    margin-bottom: -5%;
+}
+
+.cardCtn, #cardThree {
+    background: url("../../../assets/img/childtwo.jpg");
+    background-size: 400px 380px;
+    position: relative;
+    right: -33%; 
+    margin-bottom: -2%;
+}
+
+.cardCtn, #cardFour {
+    background: url("../../../assets/img/childtroi.jpg");
+    background-size: 400px 380px;
+    position: relative;
+    right: -63%; 
+    margin-bottom: -7%;
+}
+
+.cardCtn, #cardFive {
+    background: url("../../../assets/img/dadone.jpg");
+    background-size: 400px 380px;
+    position: relative;
+    right: -23%; 
+    margin-bottom: -2%;
+}
+
+.cardItem {
+    position: absolute;
+   width: 280px;
+   height: 380px;
+    margin: auto;
+    background: rgba(107, 173, 166, 0.9);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(30px);
+    border-radius: 5px;
+}
+
+.cardItem:hover {
+    opacity: 0.9;
+    transform: translateY(0px);
+    box-shadow: 8px 8px 5px #1b5c53;
+ & hr {
+    width: 20%;
+}
+}
+
+.cardItem h5 {
+    font-family: 'Rubik';
+    font-size: 30px;
+    margin: 20px;
+}
+
+.cardItem h6 {
+    font-family: 'Rubik';
+    font-size: 15px;
+    margin: -15px 0px 20px 21px;
+}
+
+.cardItem hr {
+    border: 2px solid white;
+    position: absolute;
+    left:20px;
+    width: 0%;
+    transition: all .9s;
+}
+
+.cardItem p {
+    @include textBloc;
+    margin: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardItem .btnWay {
+    border: 3px solid #ffffff;
+    border-radius: 7px;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 22px;
+}
+
+
+/* ARROW DECORATION */ 
+
+.i-a {
+    width: 10%;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3%;
+    top: 11%; 
+    margin: 0;
+}
+
+.i-b {
+    transform: rotate(10deg);
+    width: 99%;
+    position: absolute;
+    right: 53%;
+    top: -190%; 
+    margin: 0;
+}
+
+.i-c {
+    transform: rotate(-7deg);
+    width: 17%;
+    position: absolute;
+    right: 1%;
+    top: 90%; 
+    margin: 0;
+}
+
+.i-d {
+    transform: rotate(17deg);
+    width: 37%;
+    position: absolute;
+    right: 71%;
+    top: 150%; 
+    margin: 0;
+}
+
+.i-e {
+    transform: rotate(37deg);
+    width: 35%;
+    position: absolute;
+    right: 1%;
+    top: 212%; 
+    margin: 0;
+}
+
+.i-f {
+    transform: rotate(22deg);
+    width: 11%;
+    position: absolute;
+    right: 79%;
+    top: 272%; 
+    margin: 0;
+}
+
+.i-g {
+    transform: rotate(20deg);
+    width: 71%;
+    position: absolute;
+    right: -240%;
+    top: 26%; 
+    margin: 0;
+}
+
+.gifOne {
+    width: 99%;
+    position: absolute;
+    right: -16%;
+    top: 108%;
+    transform: rotate(10deg);
+}
+
+.gifTwo {
+    width: 98%;
+    position: absolute;
+    right: -166%;
+    top: 34%;
+    transform: rotate(-4deg);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 820px) {
+
+        /* HEADER */
+
+        .headCtn img {
+            width: 80%;
+            height: 80%;
+            padding-top: 5%;
+            margin-bottom: 5%;
+        }
+        /* ARROWS */
+
+        .i-b, .i-c, .gifOne, .gifTwo, .i-f, .i-g, .i-d {
+            display: none;
+        }
+
+        /* STORY BLOCK */
+
+        .storyBlk{
+            width: 80%;
+            padding: 6%;
+            margin-bottom: 10%;
+            text-align: justify; & p {
+                font-size: 16px;
+            } 
+        } 
+
+        /* CARD */
+
+        .cardCtn {
+            margin: auto;
+            margin-bottom: 50px;
+            position: absolute;
+            top: 0; right: 0; left: 0;
+        } 
+
+        #cardOne, #cardTwo, #cardThree, #cardFour, #cardFive {
+            margin-bottom: 50px;
+        }
+
+        
+}
+
+
+/* MODAL BOX */
+
+.progressBox {
+    width: 3000px;
+    max-width: 1000px !important;
+}
+
+
+.progressBox h3 {
+    margin: 20px;
+    font-family: 'Vibur', cursive;
+    font-size: 62px;
+    text-align: center;
+    color: rgb(240, 167, 57);
+}
+
+.progressBox p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(35, 62, 79);
+}
+
+.progressBox button {
+    background: none;
+    color: rgb(240, 167, 57);
+    border: 5px solid rgb(240, 167, 57);
+    font-size: 30px;
+    padding: 1% 5% 1% 5%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.progressBox hr {
+    width: 30%;
+    border: 4px solid rgb(35, 62, 79);
+    background-color: rgb(35, 62, 79);
+}
+
+.progressBox iframe {
+   margin-left: 26%;
+}

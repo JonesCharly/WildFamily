@@ -1,0 +1,31 @@
+<div class="navbarCtn">
+
+  <div class="navBlc" [@openClose]="isOpen ? 'open' : 'close'">
+
+    <button type="button" (click)="toggle()" [@rotateBtn]="isOpen ? 'right' : 'left'"><i class="fas fa-angle-double-right"></i></button>   
+
+    <div class="linkblc" [@rotateText]="isOpen ? 'verti' : 'hori'" >
+
+        
+        <a [routerLink]="['/gallery']">Gallery</a>
+        <a>Map</a>
+        <a [routerLink]="['/blog']">Blog</a>
+        <a [routerLink]="['/about']">About</a>
+        <a [routerLink]="['/contact']">Contact</a>
+
+    </div>
+
+    <div class="footerblc" *ngIf="footer">
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    
+  </div>
+
+
+
+</div>
+
+
+
