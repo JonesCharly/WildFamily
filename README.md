@@ -1,5 +1,7 @@
 # WildFamily
 
+This project is a Blog & Gallery Website for a professionnal photographer & influencer. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server
