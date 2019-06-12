@@ -1,0 +1,48 @@
+<ngx-smart-modal #myModal identifier="myModal" customClass="progressBox" class="progressBox">
+    <h3>Work in Progress...</h3>
+    <hr>
+    <p>Sorry This page isn't Available yet !!!</p>
+    <img src="https://i.giphy.com/media/3owyp2SViuDIGh8YoM/giphy.webp" frameBorder="0" class="giphy-embed" />
+    <hr>
+    <button class="buttonWay"(click)="myModal.close()">Close</button>
+</ngx-smart-modal>
+<div class="mapCtn">
+
+    <h3>Travel in Progress</h3>
+
+    <hr>
+
+    <div class="mapBck">
+
+        <div class="laMap">
+
+            <img src="../../assets/img/worldmap.png"/>
+
+            <div class="pinOne" (click)="ngxSmartModalService.getModal('myModal').open()">
+                
+                <i class="fas fa-map-marker-alt" ></i>
+                <!-- <div class='pin'></div>
+                <div class="center"></div> -->
+
+            </div>
+
+            <div class="pinTwo" (click)="ngxSmartModalService.getModal('myModal').open()">
+
+                <i class="fas fa-map-marker-alt"></i>
+                <!-- <div class='pin'></div>
+                <div class="center"></div> -->
+
+            </div>
+
+            <div class="pinThree" (click)="ngxSmartModalService.getModal('myModal').open()">
+                
+                <i class="fas fa-map-marker-alt"></i>
+                <!-- <div class='pin'></div>
+                <div class="center"></div> -->
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
+import { TravelmapComponent } from './component/travelmap/travelmap.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
@@ -21,15 +22,16 @@ import { AboutFinalComponent } from './component/about-final/about-final.compone
   declarations: [
     AppComponent,
     GalleryComponent,
-    NavbarComponent,
+    TravelmapComponent,
     BlogComponent,
-    ContactUsComponent,
     InProgressComponent,
     MenuburgerComponent,
     AboutFinalComponent, 
+    ContactUsComponent,
+    NavbarComponent 
+
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxSmartModalModule.forRoot(),

@@ -81,7 +81,10 @@ $dialog-position-top: 8%;
 .progressBox {
     width: 3000px;
     max-width: 1000px !important;
-    & iframe {
+    & .giphy-embed {
+        width: 400px;
+        height: 400px;
+        
         margin-left: 22%;
     } & h3 {
         margin: 20px;
@@ -94,7 +97,7 @@ $dialog-position-top: 8%;
         font-size: 25px;
         text-align: center;
         color: rgb(35, 62, 79);
-    } & button {
+    } & .buttonWay {
         background: none;
         color: rgb(240, 167, 57);
         border: 5px solid rgb(240, 167, 57);
