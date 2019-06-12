@@ -11,6 +11,7 @@ import { TravelmapComponent } from './component/travelmap/travelmap.component'
 
 const routes: Routes = [
   {path: 'gallery', component: GalleryComponent },
+  {path: '', component: GalleryComponent },
   {path: 'map', component: TravelmapComponent },
   {path: 'blog', component: BlogComponent },
   {path: 'contact', component: ContactUsComponent },
